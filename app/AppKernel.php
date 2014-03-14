@@ -31,15 +31,16 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
 
-            // sandbox bundles
-            new KPhoen\Bundle\SingleUploadableBundle\KPhoenSingleUploadableBundle(),
-
             // fixtures
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
 
             // vich uploader
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
+
+            // sandbox bundles
+            new KPhoen\Bundle\SingleUploadableBundle\KPhoenSingleUploadableBundle(),
+            new KPhoen\Bundle\MultipleUploadableBundle\KPhoenMultipleUploadableBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

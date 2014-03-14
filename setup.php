@@ -50,8 +50,10 @@ function execute_commands($commands, $output)
 
 $output->writeln("<info>Resetting demo</info>");
 
-$fs->remove(sprintf('%s/web/images', $rootDir));
-$fs->mkdir(sprintf('%s/web/images', $rootDir));
+foreach (array('images', 'cars') as $dir) {
+    $fs->remove(sprintf('%s/web/%s', $rootDir, $dir));
+    $fs->mkdir(sprintf('%s/web/%s', $rootDir, $dir));
+}
 
 $success = execute_commands(array(
     'rm -rf ./app/cache/*',

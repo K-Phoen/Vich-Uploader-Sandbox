@@ -1,0 +1,17 @@
+KPhoen\Bundle\MultipleUploadableBundle\Entity\Car:
+    type:   entity
+    table:  cars
+
+    fields:
+        id:
+            type:       integer
+            id:         true
+            generator:  { strategy: AUTO }
+
+        name:
+            type:             string
+            length:           255
+
+        front_image_filename: string
+
+        back_image_filename:  string

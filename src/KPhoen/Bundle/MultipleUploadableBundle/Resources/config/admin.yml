@@ -1,0 +1,9 @@
+services:
+    multiple_uploadable.admin.car:
+        class: KPhoen\Bundle\MultipleUploadableBundle\Admin\CarAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Multiple Uploadable Field", label: "Car" }
+        arguments:
+            - ~
+            - KPhoen\Bundle\MultipleUploadableBundle\Entity\Car
+            - ~

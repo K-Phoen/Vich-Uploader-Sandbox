@@ -1,0 +1,8 @@
+KPhoen\Bundle\MultipleUploadableBundle\Entity\Car:
+    front_image:
+        mapping:           car_front_mapping
+        filename_property: front_image_filename
+
+    back_image:
+        mapping:           car_back_mapping
+        filename_property: back_image_filename

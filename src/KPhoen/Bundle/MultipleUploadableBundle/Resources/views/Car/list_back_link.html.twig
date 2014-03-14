@@ -1,0 +1,5 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+
+{% block field %}
+<a href="{{ vich_uploader_asset(object, 'back_image') }}">See</a>
+{% endblock %}
