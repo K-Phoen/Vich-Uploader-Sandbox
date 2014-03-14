@@ -1,0 +1,11 @@
+knp_gaufrette:
+    stream_wrapper: ~
+
+    adapters:
+        image_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/images
+
+    filesystems:
+        image_fs:
+            adapter:    image_adapter

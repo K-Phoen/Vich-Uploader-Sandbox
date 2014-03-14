@@ -1,0 +1,18 @@
+services:
+    # needed as fos_user bundle relies on the mailer... which is not installed (@fixme)
+    mailer: {class: DateTime}
+
+fos_user:
+    db_driver:      orm # can be orm or odm
+    firewall_name:  main
+    user_class:     Application\Sonata\UserBundle\Entity\User
+
+    service:
+        mailer: fos_user.mailer.noop
+
+    group:
+        group_class:   Application\Sonata\UserBundle\Entity\Group
+        group_manager: sonata.user.orm.group_manager                    # If you're using doctrine orm
+
+    service:
+        user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm

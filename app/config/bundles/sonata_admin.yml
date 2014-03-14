@@ -1,0 +1,26 @@
+sonata_user:
+    security_acl: true
+    manager_type: orm # can be orm or mongodb
+
+sonata_block:
+    default_contexts:   [admin]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+        sonata.admin.block.search_result:
+            contexts:   [admin]
+
+        sonata.user.block.menu:
+            contexts:   [admin]
+
+        sonata.user.block.account:
+            contexts:   [admin]
+
+sonata_admin:
+    title:      Sandbox Admin
+    options:    { confirm_exit:   false }
+
+sonata_doctrine_orm_admin:
+    # default value is null, so doctrine uses the value defined in the configuration
+    entity_manager: ~

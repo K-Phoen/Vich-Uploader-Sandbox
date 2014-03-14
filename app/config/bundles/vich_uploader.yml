@@ -1,0 +1,8 @@
+vich_uploader:
+    db_driver: orm
+    gaufrette: true
+    storage:   vich_uploader.storage.gaufrette
+    mappings:
+        image_mapping:
+            uri_prefix:         /images
+            upload_destination: image_fs
