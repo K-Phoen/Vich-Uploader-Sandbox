@@ -37,6 +37,15 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-create-project-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "php setup.php"
         ]
     },
     "config": {
@@ -47,7 +56,14 @@
         "symfony-web-dir": "web",
         "symfony-assets-install": "symlink",
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_driver": "DATABASE_DRIVER",
+                "database_host": "DATABASE_HOST",
+                "database_name": "DATABASE_NAME",
+                "database_user": "DATABASE_USER",
+                "database_password": "DATABASE_PASSWORD"
+            }
         },
         "branch-alias": {
             "dev-master": "2.4-dev"
