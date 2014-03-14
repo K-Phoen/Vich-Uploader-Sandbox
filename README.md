@@ -1,6 +1,7 @@
 Vich Uploader Sandbox
 =====================
 
+
 What's inside?
 --------------
 
@@ -27,3 +28,13 @@ The installation process used Incenteev's ParameterHandler to handle
 to use environment variables to configure this file:
 
     DATABASE_NAME=sandbox DATABASE_USER=sandbox DATABASE_PASSWORD=sandbox php composer.phar create-project kphoen/vich-uploader-sandbox:dev-master
+
+
+Run
+---
+
+If you are running PHP5.4, you can use the built in server to start the demo:
+
+    php -S localhost:9090 -t web/app
+
+Now open your browser and go to http://localhost:9090/
