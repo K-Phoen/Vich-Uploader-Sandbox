@@ -20,10 +20,10 @@ Get composer:
 
 Run the following command for the master branch:
 
-    php composer.phar create-project kphoen/vich-uploader-sandbox:master
+    php composer.phar create-project kphoen/vich-uploader-sandbox:dev-master
 
 The installation process used Incenteev's ParameterHandler to handle
 `parameters.yml` configuration. With the current installation, it is possible
 to use environment variables to configure this file:
 
-    DATABASE_NAME=sandbox DATABASE_USER=sandbox DATABASE_PASSWORD=sandbox php composer.phar create-project kphoen/vich-uploader-sandbox:master
+    DATABASE_NAME=sandbox DATABASE_USER=sandbox DATABASE_PASSWORD=sandbox php composer.phar create-project kphoen/vich-uploader-sandbox:dev-master
