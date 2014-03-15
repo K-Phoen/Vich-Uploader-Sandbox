@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="default" namespace="KPhoen\MultipleUploadableBundle\Model" defaultIdMethod="native">
+
+    <table name="car">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" primaryString="true" size="255" />
+        <column name="front_image_filename" type="varchar" />
+        <column name="back_image_filename" type="varchar" />
+
+        <behavior name="event_dispatcher" />
+    </table>
+
+</database>

@@ -1,0 +1,6 @@
+admingenerator_generator:
+    use_propel:           true
+
+    overwrite_if_exists: %kernel.debug%
+
+    base_admin_template: AdmingeneratorGeneratorBundle::base_admin.html.twig

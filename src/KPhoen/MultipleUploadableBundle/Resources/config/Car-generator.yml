@@ -1,0 +1,57 @@
+generator: admingenerator.generator.propel
+params:
+    model:              KPhoen\MultipleUploadableBundle\Model\Car
+    namespace_prefix:   KPhoen
+    bundle_name:        MultipleUploadableBundle
+    fields:
+        front_image:
+            formType: file
+            dbType:   VARCHAR
+        back_image:
+            formType: file
+            dbType:   VARCHAR
+
+builders:
+    list:
+        params:
+            title: List for MultipleUploadableBundle
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: ~
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display: [ name ]
+    new:
+        params:
+            title: New object for MultipleUploadableBundle
+            display: [ name, front_image, back_image ]
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the object \"%object%\"|{ %object%: Car.name }|"
+            display: [ name, front_image, back_image ]
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the object \"%object%\"|{ %object%: Car.name }|"
+            display: [ name ]
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

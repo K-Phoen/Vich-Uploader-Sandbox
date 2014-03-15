@@ -13,34 +13,22 @@ class AppKernel extends Kernel
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
 
-            // sonata foundation bundles
-            new Sonata\CoreBundle\SonataCoreBundle(),
-            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-            new Sonata\BlockBundle\SonataBlockBundle(),
-            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            // propel
+            new Propel\PropelBundle\PropelBundle(),
+
+            // admingenerator-related
+            new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-
-            // User-related bundles
-            new FOS\UserBundle\FOSUserBundle(),
-            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
-
-            // sonata admin
-            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-            new Sonata\AdminBundle\SonataAdminBundle(),
-
-            // fixtures
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
 
             // vich uploader
-            new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
+            new Bazinga\Bundle\PropelEventDispatcherBundle\BazingaPropelEventDispatcherBundle(),
 
             // sandbox bundles
-            new KPhoen\Bundle\SingleUploadableBundle\KPhoenSingleUploadableBundle(),
-            new KPhoen\Bundle\MultipleUploadableBundle\KPhoenMultipleUploadableBundle(),
+            new KPhoen\SingleUploadableBundle\KPhoenSingleUploadableBundle(),
+            new KPhoen\MultipleUploadableBundle\KPhoenMultipleUploadableBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

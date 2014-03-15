@@ -1,16 +1,14 @@
 vich_uploader:
-    db_driver: orm
-    gaufrette: true
-    storage:   vich_uploader.storage.gaufrette
+    db_driver: propel
 
     mappings:
         car_front_mapping:
             uri_prefix:         /cars/front
-            upload_destination: car_front_fs
+            upload_destination: %kernel.root_dir%/../web/cars/front
         car_back_mapping:
             uri_prefix:         /cars/back
-            upload_destination: car_back_fs
+            upload_destination: %kernel.root_dir%/../web/cars/back
 
         image_mapping:
             uri_prefix:         /images
-            upload_destination: image_fs
+            upload_destination: %kernel.root_dir%/../web/images

@@ -1,0 +1,4 @@
+<vich_uploader class="KPhoen\MultipleUploadableBundle\Model\Car">
+    <field mapping="car_front_mapping" name="front_image" filename_property="front_image_filename" />
+    <field mapping="car_back_mapping" name="back_image" filename_property="back_image_filename" />
+</vich_uploader>

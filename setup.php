@@ -58,10 +58,8 @@ foreach (array('images', 'cars') as $dir) {
 $success = execute_commands(array(
     'rm -rf ./app/cache/*',
 
-    './app/console doctrine:database:drop --force',
-    './app/console doctrine:database:create',
-    './app/console doctrine:schema:update --force',
-    './app/console doctrine:fixtures:load --verbose --env=dev',
+    './app/console propel:build',
+    './app/console propel:sql:insert --force',
 ), $output);
 
 if (!$success) {

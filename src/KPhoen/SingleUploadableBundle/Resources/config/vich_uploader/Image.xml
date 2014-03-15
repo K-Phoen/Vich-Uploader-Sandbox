@@ -1,0 +1,3 @@
+<vich_uploader class="KPhoen\SingleUploadableBundle\Model\Image">
+    <field mapping="image_mapping" name="image" filename_property="file_name" />
+</vich_uploader>

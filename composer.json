@@ -9,19 +9,16 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.4",
-        "doctrine/orm": "~2.2,>=2.2.3",
-        "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sonata-project/doctrine-orm-admin-bundle": "dev-master",
-        "sonata-project/user-bundle": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "~2.2",
-        "vich/uploader-bundle": "dev-master",
-        "knplabs/gaufrette": "dev-master",
-        "knplabs/knp-gaufrette-bundle": "dev-master"
+        "cedriclombardot/admingenerator-generator-bundle": "2.3.*@dev",
+        "propel/propel-bundle": "1.4.*",
+        "willdurand/propel-eventdispatcher-behavior": ">=1.2",
+        "willdurand/propel-eventdispatcher-bundle": ">=1.0",
+        "vich/uploader-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -48,7 +45,8 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "component-dir": "web/components"
     },
     "extra": {
         "symfony-app-dir": "app",

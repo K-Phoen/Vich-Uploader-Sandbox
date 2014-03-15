@@ -1,4 +1,5 @@
 /web/bundles/
+/web/components/
 /web/images/
 /web/cars/
 /app/bootstrap.php.cache
@@ -11,3 +12,11 @@
 /vendor/
 /bin/
 /composer.phar
+
+# propel generated classes & config
+src/*/*/Model/om/
+src/*/*/Model/map/
+app/propel/sql/default.sql
+bin/propel-gen
+bin/propel-gen.bat
+bin/phing

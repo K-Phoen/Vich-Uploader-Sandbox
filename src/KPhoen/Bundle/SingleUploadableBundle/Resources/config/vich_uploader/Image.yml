@@ -1,4 +1,0 @@
-KPhoen\Bundle\SingleUploadableBundle\Entity\Image:
-    image:
-        mapping:           image_mapping
-        filename_property: file_name

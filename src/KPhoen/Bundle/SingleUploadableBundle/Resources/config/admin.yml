@@ -1,9 +1,0 @@
-services:
-    single_uploadable.admin.image:
-        class: KPhoen\Bundle\SingleUploadableBundle\Admin\ImageAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: "Single Uploadable Field", label: "Image" }
-        arguments:
-            - ~
-            - KPhoen\Bundle\SingleUploadableBundle\Entity\Image
-            - ~

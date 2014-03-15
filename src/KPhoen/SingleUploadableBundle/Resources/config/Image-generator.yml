@@ -1,0 +1,54 @@
+generator: admingenerator.generator.propel
+params:
+    model:            KPhoen\SingleUploadableBundle\Model\Image
+    namespace_prefix: KPhoen
+    bundle_name:      SingleUploadableBundle
+    fields:
+        image:
+            formType: file
+            dbType:   VARCHAR
+
+builders:
+    list:
+        params:
+            title: List for SingleUploadableBundle
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: ~
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display: [ title ]
+    new:
+        params:
+            title: New object for SingleUploadableBundle
+            display: [ title, image ]
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the object \"%object%\"|{ %object%: Image.title }|"
+            display: [ title, image ]
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the object \"%object%\"|{ %object%: Image.title }|"
+            display: [ title ]
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~
