@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8ea73ae785dfbe7977c210458d7a34d9",
+    "hash": "6887ce629939f38af8b89c69f0627969",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3033,12 +3033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "89c20d97aadf566d93266a5a7fd732c659be5757"
+                "reference": "40943eac525ca8240f4dc6cd52e8f8729a9bb6cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/89c20d97aadf566d93266a5a7fd732c659be5757",
-                "reference": "89c20d97aadf566d93266a5a7fd732c659be5757",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/40943eac525ca8240f4dc6cd52e8f8729a9bb6cf",
+                "reference": "40943eac525ca8240f4dc6cd52e8f8729a9bb6cf",
                 "shasum": ""
             },
             "require": {
@@ -3088,7 +3088,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2014-02-26 11:58:58"
+            "time": "2014-03-15 13:24:25"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
