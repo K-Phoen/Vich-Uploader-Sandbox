@@ -9,7 +9,7 @@ This sandbox comes with several branches, each one featuring distinct
 configurations of [VichUploaderBundle](https://github.com/dustin10/VichUploaderBundle):
 
   * `master`: gaufrette, Doctrine ORM and [SonataAdminBundle](https://github.com/sonata-project/SonataAdminBundle) ;
-  * `propel-admingen`: Propel ORM and [AdmingeneratorGeneratorBundle](https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle).
+  * `propel-admingen`: flysystem, Propel ORM and [AdmingeneratorGeneratorBundle](https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle).
 
 
 Installation
