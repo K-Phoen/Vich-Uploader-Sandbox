@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
 
     - { resource: bundles/admingenerator_generator.yml }
+    - { resource: bundles/oneup_flysystem.yml }
     - { resource: bundles/vich_uploader.yml }
 
 framework:

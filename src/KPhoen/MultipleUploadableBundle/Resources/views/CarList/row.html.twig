@@ -1,1 +1,9 @@
 {% extends_admingenerated "KPhoenMultipleUploadableBundle:CarList:row.html.twig" %}
+
+{% block list_td_column_front_image_filename %}
+<a href="{{ vich_uploader_asset(Car, 'front_image') }}">{{ Car.frontImageFilename }}</a>
+{% endblock %}
+
+{% block list_td_column_back_image_filename %}
+<a href="{{ vich_uploader_asset(Car, 'back_image') }}">{{ Car.backImageFilename }}</a>
+{% endblock %}

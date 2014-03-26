@@ -1,14 +1,16 @@
 vich_uploader:
     db_driver: propel
+    storage:   vich_uploader.storage.flysystem
+    flysystem: true
 
     mappings:
         car_front_mapping:
             uri_prefix:         /cars/front
-            upload_destination: %kernel.root_dir%/../web/cars/front
+            upload_destination: car_front_fs
         car_back_mapping:
             uri_prefix:         /cars/back
-            upload_destination: %kernel.root_dir%/../web/cars/back
+            upload_destination: car_back_fs
 
         image_mapping:
             uri_prefix:         /images
-            upload_destination: %kernel.root_dir%/../web/images
+            upload_destination: image_fs

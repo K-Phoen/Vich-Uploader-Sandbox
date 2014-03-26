@@ -18,7 +18,8 @@
         "propel/propel-bundle": "1.4.*",
         "willdurand/propel-eventdispatcher-behavior": ">=1.2",
         "willdurand/propel-eventdispatcher-bundle": ">=1.0",
-        "vich/uploader-bundle": "dev-master"
+        "vich/uploader-bundle": "dev-master",
+        "oneup/flysystem-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

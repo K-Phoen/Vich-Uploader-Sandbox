@@ -1,0 +1,21 @@
+oneup_flysystem:
+    adapters:
+        car_front_image_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/cars/front
+        car_back_image_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/cars/back
+
+        image_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/images
+
+    filesystems:
+        car_front_fs:
+            adapter:    car_front_image_adapter
+        car_back_fs:
+            adapter:    car_back_image_adapter
+
+        image_fs:
+            adapter:    image_adapter

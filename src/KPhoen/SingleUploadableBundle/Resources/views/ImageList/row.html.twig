@@ -1,1 +1,3 @@
 {% extends_admingenerated "KPhoenSingleUploadableBundle:ImageList:row.html.twig" %}
+
+{% block list_td_column_file_name %}<a href="{{ vich_uploader_asset(Image, 'image') }}">{{ Image.fileName }}</a>{% endblock %}
