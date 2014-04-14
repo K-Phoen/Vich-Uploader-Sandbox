@@ -1,0 +1,27 @@
+KPhoen\Bundle\MultipleUploadableBundle\Entity\BikeImage:
+    type:   entity
+    table:  bike_images
+
+    fields:
+        id:
+            type:       integer
+            id:         true
+            generator:  { strategy: AUTO }
+
+        bike_id:
+            type:     integer
+
+        title:
+            type:       string
+            length:     255
+
+        file_name:      string
+
+    manyToOne:
+        bike:
+            targetEntity:             Bike
+            inversedBy:               images
+            joinColumn:
+                name:                 bike_id
+                referencedColumnName: id
+                onDelete:             cascade

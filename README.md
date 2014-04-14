@@ -12,6 +12,13 @@ configurations of [VichUploaderBundle](https://github.com/dustin10/VichUploaderB
   * `propel-admingen`: flysystem, Propel ORM and [AdmingeneratorGeneratorBundle](https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle).
 
 
+On top of that, you'll find sample implementations of common needs:
+
+  * OneToOne relationship: one entity = one uploadable image ;
+  * OneToSeveral relationship: each entity has exactly X uploadable images (where `X` is known);
+  * OneToMany relationship: one entity = X uploadable images, where `X` can be
+    different from one entity to another ;
+
 Installation
 ------------
 

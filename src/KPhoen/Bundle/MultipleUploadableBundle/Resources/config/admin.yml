@@ -7,3 +7,12 @@ services:
             - ~
             - KPhoen\Bundle\MultipleUploadableBundle\Entity\Car
             - ~
+
+    multiple_uploadable.admin.bike:
+        class: KPhoen\Bundle\MultipleUploadableBundle\Admin\BikeAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Multiple Uploadable Field", label: "Bike" }
+        arguments:
+            - ~
+            - KPhoen\Bundle\MultipleUploadableBundle\Entity\Bike
+            - ~

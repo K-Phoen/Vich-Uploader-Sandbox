@@ -1,0 +1,19 @@
+KPhoen\Bundle\MultipleUploadableBundle\Entity\Bike:
+    type:   entity
+    table:  bikes
+
+    fields:
+        id:
+            type:       integer
+            id:         true
+            generator:  { strategy: AUTO }
+
+        name:
+            type:             string
+            length:           255
+
+    oneToMany:
+        images:
+            targetEntity: BikeImage
+            mappedBy:     bike
+            cascade:      ["persist", "merge"]

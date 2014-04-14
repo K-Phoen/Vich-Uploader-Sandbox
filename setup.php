@@ -50,7 +50,7 @@ function execute_commands($commands, $output)
 
 $output->writeln("<info>Resetting demo</info>");
 
-foreach (array('images', 'cars') as $dir) {
+foreach (array('images', 'cars', 'bikes') as $dir) {
     $fs->remove(sprintf('%s/web/%s', $rootDir, $dir));
     $fs->mkdir(sprintf('%s/web/%s', $rootDir, $dir));
 }

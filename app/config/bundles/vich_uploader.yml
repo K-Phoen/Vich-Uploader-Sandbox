@@ -11,6 +11,10 @@ vich_uploader:
             uri_prefix:         /cars/back
             upload_destination: car_back_fs
 
+        bike_mapping:
+            uri_prefix:         /bikes
+            upload_destination: bike_fs
+
         image_mapping:
             uri_prefix:         /images
             upload_destination: image_fs

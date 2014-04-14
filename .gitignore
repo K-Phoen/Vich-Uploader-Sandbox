@@ -1,6 +1,7 @@
 /web/bundles/
 /web/images/
 /web/cars/
+/web/bikes/
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml

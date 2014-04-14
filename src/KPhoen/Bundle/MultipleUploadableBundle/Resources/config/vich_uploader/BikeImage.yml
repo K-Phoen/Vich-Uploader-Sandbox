@@ -1,0 +1,4 @@
+KPhoen\Bundle\MultipleUploadableBundle\Entity\BikeImage:
+    image:
+        mapping:           bike_mapping
+        filename_property: file_name
