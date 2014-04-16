@@ -46,12 +46,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle.git",
-                "reference": "658365d3e58fb24022e04cb0fb4fdc1e654d9f1c"
+                "reference": "d8e69e5e4a7860df7f116218cf94893a1518d2c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/658365d3e58fb24022e04cb0fb4fdc1e654d9f1c",
-                "reference": "658365d3e58fb24022e04cb0fb4fdc1e654d9f1c",
+                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/d8e69e5e4a7860df7f116218cf94893a1518d2c6",
+                "reference": "d8e69e5e4a7860df7f116218cf94893a1518d2c6",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-02-28 13:16:44"
+            "time": "2014-04-15 16:41:54"
         },
         {
             "name": "cedriclombardot/twig-generator",
@@ -1075,23 +1075,23 @@
         },
         {
             "name": "league/flysystem",
-            "version": "0.3.0",
+            "version": "0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f5d9978f38828cdfa18da5930df7ebc4d30fa1da"
+                "reference": "387e012fa93878e3865ed8db1aa9daba8bf2f9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f5d9978f38828cdfa18da5930df7ebc4d30fa1da",
-                "reference": "f5d9978f38828cdfa18da5930df7ebc4d30fa1da",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/387e012fa93878e3865ed8db1aa9daba8bf2f9c5",
+                "reference": "387e012fa93878e3865ed8db1aa9daba8bf2f9c5",
                 "shasum": ""
             },
             "require-dev": {
                 "aws/aws-sdk-php": "~2.5",
                 "dropbox/dropbox-sdk": "~1.1.1",
                 "league/phpunit-coverage-listener": "~1.0",
-                "mockery/mockery": "~0.9.0",
+                "mockery/mockery": "~0.9",
                 "phpseclib/phpseclib": "~0.3.5",
                 "phpunit/phpunit": "~4.0",
                 "predis/predis": "~0.8.4",
@@ -1133,7 +1133,7 @@
                 "s3",
                 "sftp"
             ],
-            "time": "2014-03-22 21:53:52"
+            "time": "2014-04-11 20:02:14"
         },
         {
             "name": "monolog/monolog",
@@ -1210,12 +1210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/1up-lab/OneupFlysystemBundle.git",
-                "reference": "e749a8b3a2877b41b726b2b193c9c7ecd2578805"
+                "reference": "8df13e12be390590c4739595326b998f0bf4a639"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/e749a8b3a2877b41b726b2b193c9c7ecd2578805",
-                "reference": "e749a8b3a2877b41b726b2b193c9c7ecd2578805",
+                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/8df13e12be390590c4739595326b998f0bf4a639",
+                "reference": "8df13e12be390590c4739595326b998f0bf4a639",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1253,7 @@
                 "abstraction",
                 "filesystem"
             ],
-            "time": "2014-02-09 13:37:55"
+            "time": "2014-04-08 12:22:46"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1835,16 +1835,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "b70633f92ff71ef490af4c17e7ca3f3bf3d0f304"
+                "reference": "3199b2e0d194f71fe2e13c95768b2ef22206682b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/b70633f92ff71ef490af4c17e7ca3f3bf3d0f304",
-                "reference": "b70633f92ff71ef490af4c17e7ca3f3bf3d0f304",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/3199b2e0d194f71fe2e13c95768b2ef22206682b",
+                "reference": "3199b2e0d194f71fe2e13c95768b2ef22206682b",
                 "shasum": ""
             },
             "require": {
@@ -1946,7 +1946,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-02-12 19:27:03"
+            "time": "2014-04-04 10:27:02"
         },
         {
             "name": "twig/extensions",
@@ -2061,12 +2061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "06bbb0182a01dab5baf402a5dac9d1fcb8471428"
+                "reference": "3578d59bdc9ee98f17d9c55262c17de269fd1d4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/06bbb0182a01dab5baf402a5dac9d1fcb8471428",
-                "reference": "06bbb0182a01dab5baf402a5dac9d1fcb8471428",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/3578d59bdc9ee98f17d9c55262c17de269fd1d4a",
+                "reference": "3578d59bdc9ee98f17d9c55262c17de269fd1d4a",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2117,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2014-03-17 12:54:52"
+            "time": "2014-04-11 19:42:59"
         },
         {
             "name": "white-october/pagerfanta-bundle",
