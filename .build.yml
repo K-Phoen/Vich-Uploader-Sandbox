@@ -1,6 +1,7 @@
 image: symfony2
 
 build:
+  - composer install --ansi --no-progress --no-dev --no-interaction --prefer-dist
   - php setup.php
 
 writable:

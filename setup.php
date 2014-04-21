@@ -62,6 +62,7 @@ $success = execute_commands(array(
     './app/console doctrine:database:create',
     './app/console doctrine:schema:update --force',
     './app/console doctrine:fixtures:load --verbose --env=dev',
+    './app/console assetic:dump --ansi',
 ), $output);
 
 if (!$success) {
