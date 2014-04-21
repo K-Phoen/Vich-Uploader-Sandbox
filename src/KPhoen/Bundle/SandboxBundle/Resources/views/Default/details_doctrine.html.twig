@@ -1,0 +1,79 @@
+{% extends 'KPhoenSandboxBundle::layout.html.twig' %}
+
+{% block title %}{{ parent() }} - Doctrine{% endblock %}
+
+{% block body %}
+<div class="container content-section">
+    <div class="row">
+        <div class="col-lg-10 col-sm-12">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+
+            <h1 class="section-heading">Doctrine + Gaufrette + Sonata Admin</h1>
+
+            <p>
+                The <a href="https://github.com/K-Phoen/Vich-Uploader-Sandbox/tree/master"><i>master</i></a> branch of the repository showcases the integration of <a href="http://www.doctrine-project.org/">Doctrine</a>,
+                <a href="https://github.com/KnpLabs/Gaufrette">Gaufrette</a> and <a href="https://github.com/sonata-project/SonataAdminBundle">SonataAdminBundle</a>
+                in <a href="https://github.com/dustin10/VichUploaderBundle">VichUploaderBundle</a>.
+            </p>
+
+            <h2>What's inside?</h2>
+
+            <p>
+                The following common situations are implemented:
+                <ul>
+                    <li><a href="#oneToOne">OneToOne relationship</a>: one entity = one uploadable image ;</li>
+                    <li><a href="#oneToSeveral">OneToSeveral relationship</a>: each entity has exactly <i>X</i> uploadable images (where <i>X</i> is known) ;</li>
+                    <li><a href="#oneToMany">OneToMany relationship</a>: one entity = <i>X</i> uploadable images, where <i>X</i> can be different from one entity to another.</li>
+                </ul>
+            </p>
+
+            <h3>Mapping definitions</h3>
+
+            <p>
+                In this application, all VichUploader <b>mappings definitions are done in Yaml</b>.<br />
+                You'll find a file per uploadable entity, each one of this files being stored in the
+                <code>Resources/config/vich_uploader</code> folder of the bundle it belongs to.
+            </p>
+
+            <h3 id="oneToOne">OneToOne relationship</h3>
+
+            <p>
+                The <code>KPhoen\Bundle\SingleUploadableBundle\Entity\Image</code>
+                implements this kind of relation: each <em>Image</em> entity
+                represents exactly one uploadable file.
+            </p>
+
+            <p>
+                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\SingleUploadableBundle\Admin\ImageAdmin</code> class.
+            </p>
+
+            <h3 id="oneToSeveral">OneToSeveral relationship</h3>
+
+            <p>
+                The <code>KPhoen\Bundle\MultipleUploadableBundle\Entity\Car</code>
+                implements this kind of relation. Each <em>Car</em> entity has
+                exactly two uploadable fields.
+            </p>
+
+            <p>
+                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\MultipleUploadableBundle\Admin\CarAdmin</code> class.
+            </p>
+
+            <h3 id="oneToMany">OneToMany relationship</h3>
+
+            <p>
+                The <code>KPhoen\Bundle\MultipleUploadableBundle\Entity\Bike</code>
+                implements this kind of relation. Each <em>Bike</em> entity has
+                an unknown number of <code>KPhoen\Bundle\MultipleUploadableBundle\Entity\BikeImage</code>.<br />
+                To achieve this, we setup a Doctrine OneToMany relation between <em>Bike</em> and <em>BikeImage</em>.
+                The latter represents an image associated to a <em>Bike</em> and we fall back to the OneToOne case.
+            </p>
+
+            <p>
+                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\MultipleUploadableBundle\Admin\BikeAdmin</code> class.
+            </p>
+        </div>
+    </div>
+</div><!-- /.container -->
+{% endblock %}

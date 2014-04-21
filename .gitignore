@@ -2,6 +2,8 @@
 /web/images/
 /web/cars/
 /web/bikes/
+/web/js/
+/web/css/
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml

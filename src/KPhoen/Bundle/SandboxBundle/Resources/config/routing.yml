@@ -1,0 +1,11 @@
+homepage:
+    pattern: /
+    defaults: { _controller: KPhoenSandboxBundle:Default:index }
+
+details_propel:
+    pattern: /details/propel
+    defaults: { _controller: KPhoenSandboxBundle:Default:detailsPropel }
+
+details_doctrine:
+    pattern: /details/doctrine
+    defaults: { _controller: KPhoenSandboxBundle:Default:detailsDoctrine }
