@@ -3,56 +3,62 @@
 {% block title %}{{ parent() }} - Propel{% endblock %}
 
 {% block body %}
-<div class="content-section-a">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
+<div class="container content-section">
+    <div class="row">
+        <div class="col-lg-10 col-sm-12">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
 
-                <h2 class="section-heading">Doctrine + Gaufrette + Sonata Admin</h2>
+            <h1 class="section-heading">Propel + Flysystem + Admingenerator</h1>
 
-                <p>
-                    Sample application showcasing <a href="https://github.com/dustin10/VichUploaderBundle">VichUploaderBundle</a>'s integration
-                    with <a href="http://www.doctrine-project.org/">Doctrine</a>
-                    as ORM, <a href="https://github.com/KnpLabs/Gaufrette">Gaufrette</a>
-                    as filesystem abstraction and <a href="https://github.com/sonata-project/SonataAdminBundle">SonataAdminBundle</a>.
-                </p>
-                <p class="details text-muted"><a href="{{ path('details_doctrine') }}">More details</a></p>
-            </div>
+            <p>
+                The <a href="https://github.com/K-Phoen/Vich-Uploader-Sandbox/tree/propel-admingen"><i>propel-admingen</i></a> branch of the repository showcases the integration of <a href="http://propelorm.org/">Propel</a>,
+                <a href="https://github.com/thephpleague/flysystem">Flysystem</a> and <a href="https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle">AdmingeneratorGeneratorBundle</a>
+                in <a href="https://github.com/dustin10/VichUploaderBundle">VichUploaderBundle</a>.
+            </p>
 
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                {% image '@KPhoenSandboxBundle/Resources/public/img/doctrine-logo.png' %}
-                    <img src="{{ asset_url }}" class="img-responsive project-logo" alt="Logo Doctrine" />
-                {% endimage %}
-            </div>
+            <h2>What's inside?</h2>
+
+            <p>
+                The following common situations are implemented:
+                <ul>
+                    <li><a href="#oneToOne">OneToOne relationship</a>: one entity = one uploadable image ;</li>
+                    <li><a href="#oneToSeveral">OneToSeveral relationship</a>: each entity has exactly <i>X</i> uploadable images (where <i>X</i> is known).</li>
+                </ul>
+            </p>
+
+            <h3>Mapping definitions</h3>
+
+            <p>
+                In this application, all VichUploader <b>mappings definitions are done in XML</b>.<br />
+                You'll find a file per uploadable entity, each one of this files being stored in the
+                <code>Resources/config/vich_uploader</code> folder of the bundle it belongs to.
+            </p>
+
+            <h3 id="oneToOne">OneToOne relationship</h3>
+
+            <p>
+                The <code>KPhoen\SingleUploadableBundle\Entity\Image</code>
+                implements this kind of relation: each <em>Image</em> entity
+                represents exactly one uploadable file.
+            </p>
+
+            <p>
+                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\SingleUploadableBundle\Admin\ImageAdmin</code> class.
+            </p>
+
+            <h3 id="oneToSeveral">OneToSeveral relationship</h3>
+
+            <p>
+                The <code>KPhoen\MultipleUploadableBundle\Entity\Car</code>
+                implements this kind of relation. Each <em>Car</em> entity has
+                exactly two uploadable fields.
+            </p>
+
+            <p>
+                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\MultipleUploadableBundle\Admin\CarAdmin</code> class.
+            </p>
         </div>
-    </div><!-- /.container -->
-</div><!-- /.content-section-a -->
-
-<div class="content-section-b">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-
-                <h2 class="section-heading">Propel + Flysystem + Admingenerator</h2>
-
-                <p>
-                    Sample application showcasing <a href="http://propelorm.org/">VichUploaderBundle</a>'s integration
-                    with <a href="http://www.doctrine-project.org/">Propel</a>
-                    as ORM, <a href="https://github.com/thephpleague/flysystem">Flysystem</a>
-                    as filesystem abstraction and <a href="https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle">AdmingeneratorGeneratorBundle</a>.
-                </p>
-                <p class="details text-muted"><a href="{{ path('details_propel') }}">More details</a></p>
-            </div>
-            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                {% image '@KPhoenSandboxBundle/Resources/public/img/propel-logo.png' %}
-                    <img src="{{ asset_url }}" class="img-responsive project-logo" alt="Logo Propel" />
-                {% endimage %}
-            </div>
-        </div>
-    </div><!-- /.container -->
-</div><!-- /.content-section-b -->
+    </div>
+</div><!-- /.container -->
 {% endblock %}
