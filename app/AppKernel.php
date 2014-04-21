@@ -41,6 +41,7 @@ class AppKernel extends Kernel
             // sandbox bundles
             new KPhoen\Bundle\SingleUploadableBundle\KPhoenSingleUploadableBundle(),
             new KPhoen\Bundle\MultipleUploadableBundle\KPhoenMultipleUploadableBundle(),
+            new KPhoen\Bundle\SandboxBundle\KPhoenSandboxBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
