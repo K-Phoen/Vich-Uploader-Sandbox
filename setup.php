@@ -58,6 +58,8 @@ foreach (array('images', 'cars') as $dir) {
 $success = execute_commands(array(
     'rm -rf ./app/cache/*',
 
+    './app/console propel:database:drop --force',
+    './app/console propel:database:create',
     './app/console propel:build',
     './app/console propel:sql:insert --force',
 ), $output);
