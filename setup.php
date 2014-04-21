@@ -31,6 +31,12 @@ if (!is_file(__DIR__.'/app/config/parameters.yml')) {
 function execute_commands($commands, $output)
 {
     foreach($commands as $command) {
+        if (is_array($command)) {
+            list($command, $canFail) = $command;
+        } else {
+            $canFail = false;
+        }
+
         $output->writeln(sprintf('<info>Executing : </info> %s', $command));
         $p = new \Symfony\Component\Process\Process($command);
         $p->setTimeout(null);
@@ -38,7 +44,7 @@ function execute_commands($commands, $output)
             $output->write($data, false, OutputInterface::OUTPUT_RAW);
         });
 
-        if (!$p->isSuccessful()) {
+        if (!$p->isSuccessful() && !$canFail) {
             return false;
         }
 
@@ -58,7 +64,7 @@ foreach (array('images', 'cars', 'bikes') as $dir) {
 $success = execute_commands(array(
     'rm -rf ./app/cache/*',
 
-    './app/console doctrine:database:drop --force',
+    array('./app/console doctrine:database:drop --force', $canFail = true),
     './app/console doctrine:database:create',
     './app/console doctrine:schema:update --force',
     './app/console doctrine:fixtures:load --verbose --env=dev',
