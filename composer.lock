@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c3e4c52d06894f894eabd3782e376f3e",
+    "hash": "7b186cc32cae7ef0d4d2176260b57608",
     "packages": [
         {
             "name": "afarkas/html5shiv",
@@ -144,7 +144,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cédric Lombardot",
+                    "name": "Cedric LOMBARDOT",
                     "email": "cedric.lombardot@gmail.com"
                 },
                 {
@@ -346,7 +346,7 @@
                     "homepage": "http://jqueryui.com/about"
                 },
                 {
-                    "name": "Joern Zaefferer",
+                    "name": "Jörn Zaefferer",
                     "email": "joern.zaefferer@gmail.com",
                     "homepage": "http://bassistance.de"
                 },
@@ -362,7 +362,7 @@
                 },
                 {
                     "name": "Corey Frang",
-                    "email": "gnarf37@gmail.com",
+                    "email": "gnarf@gnarf.net",
                     "homepage": "http://gnarf.net",
                     "role": "Developer"
                 },
@@ -1075,16 +1075,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "0.3.3",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "387e012fa93878e3865ed8db1aa9daba8bf2f9c5"
+                "reference": "02fc9c928ac08deb38d9acb771b370eb39a0cce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/387e012fa93878e3865ed8db1aa9daba8bf2f9c5",
-                "reference": "387e012fa93878e3865ed8db1aa9daba8bf2f9c5",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02fc9c928ac08deb38d9acb771b370eb39a0cce6",
+                "reference": "02fc9c928ac08deb38d9acb771b370eb39a0cce6",
                 "shasum": ""
             },
             "require-dev": {
@@ -1133,20 +1133,20 @@
                 "s3",
                 "sftp"
             ],
-            "time": "2014-04-11 20:02:14"
+            "time": "2014-04-19 13:31:04"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
-                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1afc39690e7414412face1f8cbf67b73db34485c",
+                "reference": "1afc39690e7414412face1f8cbf67b73db34485c",
                 "shasum": ""
             },
             "require": {
@@ -1174,7 +1174,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -1201,7 +1201,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-23 19:50:26"
+            "time": "2014-04-20 16:41:26"
         },
         {
             "name": "oneup/flysystem-bundle",
@@ -2061,12 +2061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "3578d59bdc9ee98f17d9c55262c17de269fd1d4a"
+                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/3578d59bdc9ee98f17d9c55262c17de269fd1d4a",
-                "reference": "3578d59bdc9ee98f17d9c55262c17de269fd1d4a",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
+                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2117,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2014-04-11 19:42:59"
+            "time": "2014-04-20 04:52:30"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -2203,7 +2203,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
