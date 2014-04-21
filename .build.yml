@@ -1,5 +1,8 @@
 image: symfony2
 
+build:
+  - php setup.php
+
 writable:
     - app/logs
     - app/cache
