@@ -1,0 +1,7 @@
+writable:
+    - app/logs
+    - app/cache
+
+    - web/images
+    - web/cars
+    - web/bikes
