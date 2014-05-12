@@ -28,6 +28,7 @@
                 <ul>
                     <li><a href="#oneToOne">OneToOne relationship</a>: one entity = one uploadable image ;</li>
                     <li><a href="#oneToSeveral">OneToSeveral relationship</a>: each entity has exactly <i>X</i> uploadable images (where <i>X</i> is known).</li>
+                    <li><a href="#oneToMany">OneToMany relationship</a>: one entity = <i>X</i> uploadable images, where <i>X</i> can be different from one entity to another.</li>
                 </ul>
             </p>
 
@@ -42,25 +43,39 @@
             <h3 id="oneToOne">OneToOne relationship</h3>
 
             <p>
-                The <code>KPhoen\SingleUploadableBundle\Entity\Image</code>
+                The <code>KPhoen\SingleUploadableBundle\Model\Image</code>
                 implements this kind of relation: each <em>Image</em> entity
                 represents exactly one uploadable file.
             </p>
 
             <p>
-                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\SingleUploadableBundle\Admin\ImageAdmin</code> class.
+                The integration with AdminGeneratorBundle can be found in the <code>src/KPhoen/SingleUploadableBundle/Resources/config/Image-generator.yml</code> file.
             </p>
 
             <h3 id="oneToSeveral">OneToSeveral relationship</h3>
 
             <p>
-                The <code>KPhoen\MultipleUploadableBundle\Entity\Car</code>
+                The <code>KPhoen\MultipleUploadableBundle\Model\Car</code>
                 implements this kind of relation. Each <em>Car</em> entity has
                 exactly two uploadable fields.
             </p>
 
             <p>
-                The integration with SonataAdminBundle can be found in the <code>KPhoen\Bundle\MultipleUploadableBundle\Admin\CarAdmin</code> class.
+                The integration with AdminGeneratorBundle can be found in the <code>src/KPhoen/MultipleUploadableBundle/Resources/config/Car-generator.yml</code> file.
+            </p>
+
+            <h3 id="oneToMany">OneToMany relationship</h3>
+
+            <p>
+                The <code>KPhoen\MultipleUploadableBundle\Model\Bike</code>
+                implements this kind of relation. Each <em>Bike</em> entity has
+                an unknown number of <code>KPhoen\Bundle\MultipleUploadableBundle\Model\BikeImage</code>.<br />
+                To achieve this, we setup a Propel OneToMany relation between <em>Bike</em> and <em>BikeImage</em>.
+                The latter represents an image associated to a <em>Bike</em> and we fall back to the OneToOne case.
+            </p>
+
+            <p>
+                The integration with AdminGeneratorBundle can be found in the <code>src/KPhoen/MultipleUploadableBundle/Resources/config/Bike-generator.yml</code> file.
             </p>
         </div>
     </div>
