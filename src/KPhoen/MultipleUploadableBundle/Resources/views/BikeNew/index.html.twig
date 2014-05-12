@@ -1,0 +1,19 @@
+{% extends_admingenerated "KPhoenMultipleUploadableBundle:BikeNew:index.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}   {# remove this line if you're not extending another template #}
+
+    {% include 'AvocodeFormExtensionsBundle::stylesheets.html.twig' %}
+    {% if form is defined %}
+        {{ afe_form_stylesheet(form) }}
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}   {# remove this line if you're not extending another template #}
+
+    {% include 'AvocodeFormExtensionsBundle::javascripts.html.twig' %}
+    {% if form is defined %}
+        {{ afe_form_javascript(form) }}
+    {% endif %}
+{% endblock %}

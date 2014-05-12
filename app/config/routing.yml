@@ -1,3 +1,8 @@
+KPhoenMultipleUploadableBundle_admin_k_phoen_multiple_uploadable_bundle_Bike:
+    resource: "@KPhoenMultipleUploadableBundle/Controller/Bike/"
+    type:     admingenerator
+    prefix:   /admin/bike
+
 KPhoenMultipleUploadableBundle_admin_k_phoen_multiple_uploadable_bundle_Car:
     resource: "@KPhoenMultipleUploadableBundle/Controller/Car/"
     type:     admingenerator

@@ -1,0 +1,3 @@
+<vich_uploader class="KPhoen\MultipleUploadableBundle\Model\BikeImage">
+    <field mapping="bike_mapping" name="image" filename_property="file_name" />
+</vich_uploader>

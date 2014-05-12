@@ -1,0 +1,61 @@
+generator: admingenerator.generator.propel
+params:
+    model:            KPhoen\MultipleUploadableBundle\Model\Bike
+    namespace_prefix: KPhoen
+    bundle_name:      MultipleUploadableBundle
+    fields:
+        bikeImages:
+            formType:         afe_collection_table
+            dbType:           collection
+            extras:
+                new_label:    New image
+            addFormOptions:
+                type:         \KPhoen\MultipleUploadableBundle\Form\Type\BikeImageType
+                allow_add:    true
+                allow_delete: true
+                by_reference: false
+
+builders:
+    list:
+        params:
+            title:   Bikes
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: ~
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display: ~
+    new:
+        params:
+            title: New bike
+            display: [ name, bikeImages ]
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: "You're editing the bike \"%object%\"|{ %object%: Bike.name }|"
+            display: [ name, bikeImages ]
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: "You're viewing the bike \"%object%\"|{ %object%: Bike.name }|"
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

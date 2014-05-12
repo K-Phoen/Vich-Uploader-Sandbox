@@ -7,6 +7,10 @@ oneup_flysystem:
             local:
                 directory: %kernel.root_dir%/../web/cars/back
 
+        bike_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/bikes
+
         image_adapter:
             local:
                 directory: %kernel.root_dir%/../web/images
@@ -16,6 +20,9 @@ oneup_flysystem:
             adapter:    car_front_image_adapter
         car_back_fs:
             adapter:    car_back_image_adapter
+
+        bike_fs:
+            adapter:    bike_adapter
 
         image_fs:
             adapter:    image_adapter

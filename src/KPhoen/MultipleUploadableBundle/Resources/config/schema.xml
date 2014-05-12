@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database name="default" namespace="KPhoen\MultipleUploadableBundle\Model" defaultIdMethod="native">
 
+    <table name="bike">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" primaryString="true" size="255" />
+    </table>
+
+    <table name="bike_image">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="bike_id" type="integer" required="true" />
+        <column name="title" type="varchar" primaryString="true" size="255" />
+        <column name="file_name" type="varchar" size="255" required="true" />
+
+        <foreign-key foreignTable="bike" onDelete="cascade">
+            <reference local="bike_id" foreign="id" />
+        </foreign-key>
+
+        <behavior name="event_dispatcher" />
+    </table>
+
+
     <table name="car">
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
         <column name="name" type="varchar" primaryString="true" size="255" />

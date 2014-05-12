@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
+            new Avocode\FormExtensionsBundle\AvocodeFormExtensionsBundle(),
 
             // vich uploader
             new Oneup\FlysystemBundle\OneupFlysystemBundle(),

@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7b186cc32cae7ef0d4d2176260b57608",
+    "hash": "ea92bfb7287939b37c0873dff7f9f0ed",
     "packages": [
         {
             "name": "afarkas/html5shiv",
-            "version": "3.7.0",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aFarkas/html5shiv.git",
-                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584"
+                "reference": "40df868a76f1f19ea23b123d1480d44a7195f349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/a4d4dcbe0875ba10c4c56c54454ae93031d59584",
-                "reference": "a4d4dcbe0875ba10c4c56c54454ae93031d59584",
+                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/40df868a76f1f19ea23b123d1480d44a7195f349",
+                "reference": "40df868a76f1f19ea23b123d1480d44a7195f349",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,61 @@
             ],
             "description": "Defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.",
             "homepage": "http://paulirish.com/2011/the-history-of-the-html5-shiv/",
-            "time": "2013-09-23 07:20:29"
+            "time": "2014-05-03 10:11:35"
+        },
+        {
+            "name": "avocode/form-extensions-bundle",
+            "version": "dev-master",
+            "target-dir": "Avocode/FormExtensionsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avocode/FormExtensions.git",
+                "reference": "7fd778c87b2c8afcab9465d9a98b49da62eb4cf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avocode/FormExtensions/zipball/7fd778c87b2c8afcab9465d9a98b49da62eb4cf5",
+                "reference": "7fd778c87b2c8afcab9465d9a98b49da62eb4cf5",
+                "shasum": ""
+            },
+            "require": {
+                "afarkas/html5shiv": "~3.7",
+                "components/bootstrap": ">= 2.3.1",
+                "components/font-awesome": ">= 3.2.0",
+                "components/jquery": ">= 1.9.0, < 2.0.0",
+                "components/jqueryui": ">= 1.9.0",
+                "robloach/component-installer": ">= 0.0.11",
+                "symfony/symfony": ">= 2.2.0",
+                "twig/extensions": "1.0.*",
+                "twig/twig": ">= 1.9.0"
+            },
+            "suggest": {
+                "cedriclombardot/admingenerator-generator-bundle": "The missing symfony2 admin generator",
+                "liip/imagine-bundle": "Apply filters on preview images"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Avocode\\FormExtensionsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT and Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Gołębiewski",
+                    "email": "loostro@gmail.com",
+                    "role": "Symfony2 bundle author"
+                },
+                {
+                    "name": "Symfony community",
+                    "homepage": "https://github.com/avocode/FormExtensions/graphs/contributors"
+                }
+            ],
+            "description": "Add additional form types to symfony2",
+            "time": "2014-05-10 22:39:29"
         },
         {
             "name": "cedriclombardot/admingenerator-generator-bundle",
@@ -46,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle.git",
-                "reference": "d8e69e5e4a7860df7f116218cf94893a1518d2c6"
+                "reference": "871fb7ac785724886b14e628c356418a54f4e443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/d8e69e5e4a7860df7f116218cf94893a1518d2c6",
-                "reference": "d8e69e5e4a7860df7f116218cf94893a1518d2c6",
+                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/871fb7ac785724886b14e628c356418a54f4e443",
+                "reference": "871fb7ac785724886b14e628c356418a54f4e443",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +166,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-04-15 16:41:54"
+            "time": "2014-04-25 14:34:20"
         },
         {
             "name": "cedriclombardot/twig-generator",
@@ -144,7 +198,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cedric LOMBARDOT",
+                    "name": "Cédric Lombardot",
                     "email": "cedric.lombardot@gmail.com"
                 },
                 {
@@ -346,7 +400,7 @@
                     "homepage": "http://jqueryui.com/about"
                 },
                 {
-                    "name": "Jörn Zaefferer",
+                    "name": "Joern Zaefferer",
                     "email": "joern.zaefferer@gmail.com",
                     "homepage": "http://bassistance.de"
                 },
@@ -362,7 +416,7 @@
                 },
                 {
                     "name": "Corey Frang",
-                    "email": "gnarf@gnarf.net",
+                    "email": "gnarf37@gmail.com",
                     "homepage": "http://gnarf.net",
                     "role": "Developer"
                 },
@@ -1075,22 +1129,22 @@
         },
         {
             "name": "league/flysystem",
-            "version": "0.4.0",
+            "version": "0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "02fc9c928ac08deb38d9acb771b370eb39a0cce6"
+                "reference": "513d46e18f71276f4bd5ab5f9e486ec32d80d4c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02fc9c928ac08deb38d9acb771b370eb39a0cce6",
-                "reference": "02fc9c928ac08deb38d9acb771b370eb39a0cce6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/513d46e18f71276f4bd5ab5f9e486ec32d80d4c5",
+                "reference": "513d46e18f71276f4bd5ab5f9e486ec32d80d4c5",
                 "shasum": ""
             },
             "require-dev": {
                 "aws/aws-sdk-php": "~2.5",
                 "dropbox/dropbox-sdk": "~1.1.1",
-                "league/phpunit-coverage-listener": "~1.0",
+                "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
                 "phpseclib/phpseclib": "~0.3.5",
                 "phpunit/phpunit": "~4.0",
@@ -1107,6 +1161,11 @@
                 "sabre/dav": "Enables WebDav support"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "League\\Flysystem\\": "src/"
@@ -1133,20 +1192,20 @@
                 "s3",
                 "sftp"
             ],
-            "time": "2014-04-19 13:31:04"
+            "time": "2014-05-08 16:04:49"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1afc39690e7414412face1f8cbf67b73db34485c"
+                "reference": "65026b610f8c19e61d7242f600530677b0466aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1afc39690e7414412face1f8cbf67b73db34485c",
-                "reference": "1afc39690e7414412face1f8cbf67b73db34485c",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
+                "reference": "65026b610f8c19e61d7242f600530677b0466aac",
                 "shasum": ""
             },
             "require": {
@@ -1201,7 +1260,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-04-20 16:41:26"
+            "time": "2014-04-24 13:29:03"
         },
         {
             "name": "oneup/flysystem-bundle",
@@ -1210,16 +1269,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/1up-lab/OneupFlysystemBundle.git",
-                "reference": "8df13e12be390590c4739595326b998f0bf4a639"
+                "reference": "00732c8f1acdb1d9e96fa8aacaed38583884dca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/8df13e12be390590c4739595326b998f0bf4a639",
-                "reference": "8df13e12be390590c4739595326b998f0bf4a639",
+                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/00732c8f1acdb1d9e96fa8aacaed38583884dca5",
+                "reference": "00732c8f1acdb1d9e96fa8aacaed38583884dca5",
                 "shasum": ""
             },
             "require": {
-                "league/flysystem": "~0.2",
+                "league/flysystem": "~0.4",
                 "symfony/framework-bundle": ">=2.0"
             },
             "require-dev": {
@@ -1253,7 +1312,7 @@
                 "abstraction",
                 "filesystem"
             ],
-            "time": "2014-04-08 12:22:46"
+            "time": "2014-05-10 20:50:57"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -1835,16 +1894,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "3199b2e0d194f71fe2e13c95768b2ef22206682b"
+                "reference": "4697c33cdfb520dcf83fd6e4f7864fa26ddaebea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/3199b2e0d194f71fe2e13c95768b2ef22206682b",
-                "reference": "3199b2e0d194f71fe2e13c95768b2ef22206682b",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/4697c33cdfb520dcf83fd6e4f7864fa26ddaebea",
+                "reference": "4697c33cdfb520dcf83fd6e4f7864fa26ddaebea",
                 "shasum": ""
             },
             "require": {
@@ -1946,7 +2005,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-04-04 10:27:02"
+            "time": "2014-04-27 13:39:18"
         },
         {
             "name": "twig/extensions",
@@ -2203,7 +2262,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }
@@ -2270,7 +2329,8 @@
     "stability-flags": {
         "cedriclombardot/admingenerator-generator-bundle": 20,
         "vich/uploader-bundle": 20,
-        "oneup/flysystem-bundle": 20
+        "oneup/flysystem-bundle": 20,
+        "avocode/form-extensions-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
