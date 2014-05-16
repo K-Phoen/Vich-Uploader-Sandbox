@@ -7,14 +7,18 @@ vich_uploader:
         car_front_mapping:
             uri_prefix:         /cars/front
             upload_destination: car_front_fs
+            namer:              vich_uploader.namer_uniqid
         car_back_mapping:
             uri_prefix:         /cars/back
             upload_destination: car_back_fs
+            namer:              vich_uploader.namer_uniqid
 
         bike_mapping:
             uri_prefix:         /bikes
             upload_destination: bike_fs
+            namer:              vich_uploader.namer_uniqid
 
         image_mapping:
             uri_prefix:         /images
             upload_destination: image_fs
+            namer:              vich_uploader.namer_uniqid
