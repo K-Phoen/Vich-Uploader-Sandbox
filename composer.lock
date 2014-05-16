@@ -3033,12 +3033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "40943eac525ca8240f4dc6cd52e8f8729a9bb6cf"
+                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/40943eac525ca8240f4dc6cd52e8f8729a9bb6cf",
-                "reference": "40943eac525ca8240f4dc6cd52e8f8729a9bb6cf",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
+                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
                 "shasum": ""
             },
             "require": {
@@ -3054,6 +3054,7 @@
                 "knplabs/knp-gaufrette-bundle": "*",
                 "matthiasnoback/symfony-dependency-injection-test": "0.*",
                 "mikey179/vfsstream": "~1.0",
+                "oneup/flysystem-bundle": "dev-master",
                 "phpunit/phpunit": "~3.7",
                 "symfony/yaml": "@stable"
             },
@@ -3088,7 +3089,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2014-03-15 13:24:25"
+            "time": "2014-04-20 04:52:30"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
