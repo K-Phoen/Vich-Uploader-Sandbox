@@ -24,4 +24,3 @@ KPhoen\Bundle\MultipleUploadableBundle\Entity\BikeImage:
             joinColumn:
                 name:                 bike_id
                 referencedColumnName: id
-                onDelete:             cascade

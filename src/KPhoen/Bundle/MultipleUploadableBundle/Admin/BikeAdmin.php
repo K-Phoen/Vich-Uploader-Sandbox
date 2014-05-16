@@ -18,7 +18,11 @@ class BikeAdmin extends Admin
             ->add('images', 'collection', array(
                 'type'          => new BikeImageType(),
                 'allow_add'     => true,
+                'allow_delete'  => true,
                 'by_reference'  => false,
+                'options'       => array(
+                    'required' => $this->getSubject()->getId() === null
+                ),
             ))
         ;
     }

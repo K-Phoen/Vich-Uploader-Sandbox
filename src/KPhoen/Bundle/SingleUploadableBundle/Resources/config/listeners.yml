@@ -1,0 +1,6 @@
+services:
+    single_uploadable.listener.image_removed:
+        class:      KPhoen\Bundle\SingleUploadableBundle\EventListener\ImageRemovedListener
+        arguments:  [ @logger ]
+        tags:
+            - { name: kernel.event_listener, event: vich_uploader.post_remove, method: onImageRemoved }
