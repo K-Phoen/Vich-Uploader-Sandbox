@@ -13,7 +13,7 @@ class ImageAdmin extends Admin
     {
         $formMapper
             ->add('title')
-            ->add('image', 'file')
+            ->add('image', 'file', array('required' => false))
         ;
     }
 
