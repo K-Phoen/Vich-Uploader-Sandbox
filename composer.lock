@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "ea92bfb7287939b37c0873dff7f9f0ed",
+    "hash": "3a29af4ef3a1861137af541d9fd0479c",
     "packages": [
         {
             "name": "afarkas/html5shiv",
@@ -45,13 +46,13 @@
             "target-dir": "Avocode/FormExtensionsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/avocode/FormExtensions.git",
-                "reference": "7fd778c87b2c8afcab9465d9a98b49da62eb4cf5"
+                "url": "https://github.com/loostro/FormExtensions.git",
+                "reference": "81353188ed452694edd286afad825da508b419e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avocode/FormExtensions/zipball/7fd778c87b2c8afcab9465d9a98b49da62eb4cf5",
-                "reference": "7fd778c87b2c8afcab9465d9a98b49da62eb4cf5",
+                "url": "https://api.github.com/repos/loostro/FormExtensions/zipball/81353188ed452694edd286afad825da508b419e6",
+                "reference": "81353188ed452694edd286afad825da508b419e6",
                 "shasum": ""
             },
             "require": {
@@ -91,28 +92,28 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2014-05-10 22:39:29"
+            "time": "2014-06-18 13:55:43"
         },
         {
             "name": "cedriclombardot/admingenerator-generator-bundle",
-            "version": "dev-master",
+            "version": "v1.1.2",
             "target-dir": "Admingenerator/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle.git",
-                "reference": "871fb7ac785724886b14e628c356418a54f4e443"
+                "reference": "68900869046a6298ac3ae613522984680cd7145f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/871fb7ac785724886b14e628c356418a54f4e443",
-                "reference": "871fb7ac785724886b14e628c356418a54f4e443",
+                "url": "https://api.github.com/repos/symfony2admingenerator/AdmingeneratorGeneratorBundle/zipball/68900869046a6298ac3ae613522984680cd7145f",
+                "reference": "68900869046a6298ac3ae613522984680cd7145f",
                 "shasum": ""
             },
             "require": {
                 "afarkas/html5shiv": ">= 3.7.0",
                 "cedriclombardot/twig-generator": "1.0.*",
-                "components/bootstrap": ">= 2.3.1,<3.0.0",
-                "components/font-awesome": "~3.2",
+                "components/bootstrap": "~3.0",
+                "components/font-awesome": "~4.0",
                 "components/jquery": ">= 1.9.0, < 2.0.0",
                 "components/jqueryui": ">= 1.9.0",
                 "knplabs/knp-menu-bundle": ">1.0,<2.1",
@@ -132,12 +133,12 @@
                 "avocode/form-extensions-bundle": "Symfony2 form extensions for Admingenerator",
                 "cedriclombardot/admingenerator-user-bundle": "FOSUserBundle integration for Admingenerator",
                 "jms/security-extra-bundle": "Allows expressions in credential checks for generated actions",
-                "liuggio/excelbundle": "Allows the usage of the Excel export"
+                "liuggio/excelbundle": "(version >= 2.0) Allows the usage of the Excel export."
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -166,7 +167,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-04-25 14:34:20"
+            "time": "2014-06-18 12:06:23"
         },
         {
             "name": "cedriclombardot/twig-generator",
@@ -215,20 +216,20 @@
         },
         {
             "name": "components/bootstrap",
-            "version": "2.3.2",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "4e517c991623b3bd913e2becd44831b2c9b0be90"
+                "reference": "839953cfb830aa27e8fd94404a4a6e02fb38a51a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/4e517c991623b3bd913e2becd44831b2c9b0be90",
-                "reference": "4e517c991623b3bd913e2becd44831b2c9b0be90",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/839953cfb830aa27e8fd94404a4a6e02fb38a51a",
+                "reference": "839953cfb830aa27e8fd94404a4a6e02fb38a51a",
                 "shasum": ""
             },
             "require": {
-                "components/jquery": "*"
+                "components/jquery": ">=1.9"
             },
             "suggest": {
                 "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
@@ -242,7 +243,8 @@
                     "files": [
                         "js/bootstrap.min.js",
                         "css/*.css",
-                        "img/*.png"
+                        "fonts/*",
+                        "less/*"
                     ],
                     "shim": {
                         "deps": [
@@ -266,20 +268,20 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-07-18 20:01:48"
+            "time": "2014-02-25 09:50:56"
         },
         {
             "name": "components/font-awesome",
-            "version": "3.2.1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/font-awesome.git",
-                "reference": "44e665c187000d03eb055a14eeb74f89445212e6"
+                "reference": "f3998ef2c6d0d85be0782044f19aaff99a15fc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/font-awesome/zipball/44e665c187000d03eb055a14eeb74f89445212e6",
-                "reference": "44e665c187000d03eb055a14eeb74f89445212e6",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/f3998ef2c6d0d85be0782044f19aaff99a15fc56",
+                "reference": "f3998ef2c6d0d85be0782044f19aaff99a15fc56",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +290,7 @@
             "type": "component",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "4.1.x-dev"
                 },
                 "component": {
                     "styles": [
@@ -296,8 +298,7 @@
                     ],
                     "files": [
                         "css/font-awesome.min.css",
-                        "css/font-awesome-ie7.*",
-                        "font/*"
+                        "fonts/*"
                     ]
                 }
             },
@@ -307,7 +308,7 @@
                 "OFL-1.1"
             ],
             "description": "The iconic font designed for use with Twitter Bootstrap.",
-            "time": "2013-07-27 07:29:06"
+            "time": "2014-05-25 18:55:16"
         },
         {
             "name": "components/jquery",
@@ -650,16 +651,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7"
+                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/ceb18cf9b0230f3ea208b6238130fd415abda0a7",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
+                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
                 "shasum": ""
             },
             "require": {
@@ -669,6 +670,9 @@
                 "doctrine/inflector": "1.*",
                 "doctrine/lexer": "1.*",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "extra": {
@@ -721,7 +725,145 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-09-07 10:20:34"
+            "time": "2014-05-21 19:28:51"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "v2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "fec965d330c958e175c39e61c3f6751955af32d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/fec965d330c958e175c39e61c3f6751955af32d0",
+                "reference": "fec965d330c958e175c39e61c3f6751955af32d0",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.4",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "symfony/console": "~2.0"
+            },
+            "suggest": {
+                "symfony/console": "Allows use of the command line interface"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\DBAL\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Database Abstraction Layer",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "dbal",
+                "persistence",
+                "queryobject"
+            ],
+            "time": "2014-01-01 16:43:57"
+        },
+        {
+            "name": "doctrine/doctrine-bundle",
+            "version": "v1.2.0",
+            "target-dir": "Doctrine/Bundle/DoctrineBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineBundle.git",
+                "reference": "765b0d87fcc3e839c74817b7211258cbef3a4fb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/765b0d87fcc3e839c74817b7211258cbef3a4fb9",
+                "reference": "765b0d87fcc3e839c74817b7211258cbef3a4fb9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": ">=2.2,<2.5-dev",
+                "jdorn/sql-formatter": "~1.1",
+                "php": ">=5.3.2",
+                "symfony/doctrine-bridge": "~2.2",
+                "symfony/framework-bundle": "~2.2"
+            },
+            "require-dev": {
+                "doctrine/orm": ">=2.2,<2.5-dev",
+                "symfony/validator": "~2.2",
+                "symfony/yaml": "~2.2"
+            },
+            "suggest": {
+                "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
+                "symfony/web-profiler-bundle": "to use the data collector"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\DoctrineBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Symfony DoctrineBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "dbal",
+                "orm",
+                "persistence"
+            ],
+            "time": "2013-03-25 20:13:59"
         },
         {
             "name": "doctrine/inflector",
@@ -840,6 +982,82 @@
             "time": "2013-01-12 18:59:04"
         },
         {
+            "name": "doctrine/orm",
+            "version": "v2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
+                "reference": "8a13376d42b5ea467727ffe730aa0e14ca3c5e29",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.1",
+                "doctrine/dbal": "~2.4",
+                "ext-pdo": "*",
+                "php": ">=5.3.2",
+                "symfony/console": "~2.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master",
+                "symfony/yaml": "~2.1"
+            },
+            "suggest": {
+                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+            },
+            "bin": [
+                "bin/doctrine",
+                "bin/doctrine.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\ORM\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Object-Relational-Mapper for PHP",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "orm"
+            ],
+            "time": "2014-06-10 11:49:08"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -890,6 +1108,56 @@
                 "parameters management"
             ],
             "time": "2013-12-07 10:10:39"
+        },
+        {
+            "name": "jdorn/sql-formatter",
+            "version": "v1.2.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdorn/sql-formatter.git",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Dorn",
+                    "email": "jeremy@jeremydorn.com",
+                    "homepage": "http://jeremydorn.com/"
+                }
+            ],
+            "description": "a PHP SQL highlighting library",
+            "homepage": "https://github.com/jdorn/sql-formatter/",
+            "keywords": [
+                "highlight",
+                "sql"
+            ],
+            "time": "2014-01-12 16:20:24"
         },
         {
             "name": "jms/metadata",
@@ -1129,16 +1397,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "0.4.4",
+            "version": "0.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "513d46e18f71276f4bd5ab5f9e486ec32d80d4c5"
+                "reference": "69fbc26ce7a88edcf141a747a1e5008a25a3b826"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/513d46e18f71276f4bd5ab5f9e486ec32d80d4c5",
-                "reference": "513d46e18f71276f4bd5ab5f9e486ec32d80d4c5",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/69fbc26ce7a88edcf141a747a1e5008a25a3b826",
+                "reference": "69fbc26ce7a88edcf141a747a1e5008a25a3b826",
                 "shasum": ""
             },
             "require-dev": {
@@ -1192,20 +1460,20 @@
                 "s3",
                 "sftp"
             ],
-            "time": "2014-05-08 16:04:49"
+            "time": "2014-05-13 19:56:59"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac"
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
-                "reference": "65026b610f8c19e61d7242f600530677b0466aac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
                 "shasum": ""
             },
             "require": {
@@ -1233,7 +1501,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -1260,7 +1528,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-04-24 13:29:03"
+            "time": "2014-06-04 16:30:04"
         },
         {
             "name": "oneup/flysystem-bundle",
@@ -1269,12 +1537,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/1up-lab/OneupFlysystemBundle.git",
-                "reference": "00732c8f1acdb1d9e96fa8aacaed38583884dca5"
+                "reference": "b73f88ee8768fdbb5209011be6f39f1624d7cd97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/00732c8f1acdb1d9e96fa8aacaed38583884dca5",
-                "reference": "00732c8f1acdb1d9e96fa8aacaed38583884dca5",
+                "url": "https://api.github.com/repos/1up-lab/OneupFlysystemBundle/zipball/b73f88ee8768fdbb5209011be6f39f1624d7cd97",
+                "reference": "b73f88ee8768fdbb5209011be6f39f1624d7cd97",
                 "shasum": ""
             },
             "require": {
@@ -1312,35 +1580,40 @@
                 "abstraction",
                 "filesystem"
             ],
-            "time": "2014-05-10 20:50:57"
+            "time": "2014-05-18 20:31:59"
         },
         {
             "name": "pagerfanta/pagerfanta",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/Pagerfanta.git",
-                "reference": "9568187b789a39a3933c71e4e28b60fc2c26b70d"
+                "reference": "ac1edfdf81c91a0f1471769071011ebf9b055421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/9568187b789a39a3933c71e4e28b60fc2c26b70d",
-                "reference": "9568187b789a39a3933c71e4e28b60fc2c26b70d",
+                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/ac1edfdf81c91a0f1471769071011ebf9b055421",
+                "reference": "ac1edfdf81c91a0f1471769071011ebf9b055421",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "doctrine/mongodb-odm": "*",
-                "doctrine/orm": "2.*",
-                "mandango/mandango": "*",
+                "doctrine/mongodb-odm": "1.0.*@dev",
+                "doctrine/orm": "2.3.*",
+                "doctrine/phpcr-odm": "1.*",
+                "jackalope/jackalope-doctrine-dbal": "1.*",
+                "jmikola/geojson": "1.0.*",
+                "mandango/mandango": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
                 "propel/propel1": "~1.6",
-                "solarium/solarium": "dev-develop"
+                "solarium/solarium": "3.1.*"
             },
             "suggest": {
                 "doctrine/mongodb-odm": "To use the DoctrineODMMongoDBAdapter.",
                 "doctrine/orm": "To use the DoctrineORMAdapter.",
+                "doctrine/phpcr-odm": "To use the DoctrineODMPhpcrAdapter. >= 1.1.0",
                 "mandango/mandango": "To use the MandangoAdapter.",
                 "propel/propel1": "To use the PropelAdapter",
                 "solarium/solarium": "To use the SolariumAdapter."
@@ -1374,7 +1647,7 @@
                 "paginator",
                 "paging"
             ],
-            "time": "2013-09-23 08:06:55"
+            "time": "2014-06-02 09:21:14"
         },
         {
             "name": "phing/phing",
@@ -1671,17 +1944,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
                 "shasum": ""
             },
             "require": {
@@ -1717,7 +1990,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-08-21 18:09:35"
+            "time": "2014-04-28 14:01:06"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -1832,21 +2105,21 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.5.1",
+            "version": "v2.6.0",
             "target-dir": "Symfony/Bundle/MonologBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "71ad844ac29401f86619f9d643393265451e858b"
+                "reference": "e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/71ad844ac29401f86619f9d643393265451e858b",
-                "reference": "71ad844ac29401f86619f9d643393265451e858b",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a",
+                "reference": "e1d4aa99c7440b11e9dfbfef7ed63084401dbc6a",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "~1.6",
+                "monolog/monolog": "~1.8",
                 "php": ">=5.3.2",
                 "symfony/config": "~2.3",
                 "symfony/dependency-injection": "~2.3",
@@ -1860,7 +2133,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -1890,20 +2163,20 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-02-19 14:49:26"
+            "time": "2014-06-04 16:49:13"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.4",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "4697c33cdfb520dcf83fd6e4f7864fa26ddaebea"
+                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/4697c33cdfb520dcf83fd6e4f7864fa26ddaebea",
-                "reference": "4697c33cdfb520dcf83fd6e4f7864fa26ddaebea",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/59365832a09a1d914d14cbca6a21a7f572760c3b",
+                "reference": "59365832a09a1d914d14cbca6a21a7f572760c3b",
                 "shasum": ""
             },
             "require": {
@@ -1961,6 +2234,7 @@
                 "doctrine/data-fixtures": "1.0.*",
                 "doctrine/dbal": "~2.2",
                 "doctrine/orm": "~2.2,>=2.2.3",
+                "egulias/email-validator": "1.1.0",
                 "ircmaxell/password-compat": "1.0.*",
                 "monolog/monolog": "~1.3",
                 "ocramius/proxy-manager": ">=0.3.1,<0.6-dev",
@@ -1969,7 +2243,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -2005,7 +2279,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-04-27 13:39:18"
+            "time": "2014-05-31 18:45:50"
         },
         {
             "name": "twig/extensions",
@@ -2120,12 +2394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5"
+                "reference": "3b9e44d5287398acdc4d266844099178f4b8ad0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
-                "reference": "b25a8124341cd08f5ca0bb5a2fc0c71bc3c4dfa5",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/3b9e44d5287398acdc4d266844099178f4b8ad0d",
+                "reference": "3b9e44d5287398acdc4d266844099178f4b8ad0d",
                 "shasum": ""
             },
             "require": {
@@ -2142,13 +2416,14 @@
                 "matthiasnoback/symfony-dependency-injection-test": "0.*",
                 "mikey179/vfsstream": "~1.0",
                 "oneup/flysystem-bundle": "dev-master",
-                "phpunit/phpunit": "~3.7",
+                "phpunit/phpunit": "~4.0",
                 "symfony/yaml": "@stable"
             },
             "suggest": {
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*",
                 "doctrine/orm": "*",
+                "doctrine/phpcr-odm": "~1.0",
                 "knplabs/knp-gaufrette-bundle": "*",
                 "symfony/yaml": "@stable",
                 "willdurand/propel-eventdispatcher-bundle": ">=1.2"
@@ -2176,7 +2451,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2014-04-20 04:52:30"
+            "time": "2014-06-21 21:24:53"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -2327,7 +2602,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "cedriclombardot/admingenerator-generator-bundle": 20,
         "vich/uploader-bundle": 20,
         "oneup/flysystem-bundle": 20,
         "avocode/form-extensions-bundle": 20

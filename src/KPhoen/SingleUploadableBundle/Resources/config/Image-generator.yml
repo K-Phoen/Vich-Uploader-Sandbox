@@ -1,12 +1,12 @@
-generator: admingenerator.generator.propel
+generator: admingenerator.generator.doctrine
 params:
-    model:            KPhoen\SingleUploadableBundle\Model\Image
+    model:            KPhoen\SingleUploadableBundle\Entity\Image
     namespace_prefix: KPhoen
     bundle_name:      SingleUploadableBundle
     fields:
         image:
             formType: file
-            dbType:   VARCHAR
+            dbType:   string
 
 builders:
     list:

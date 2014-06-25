@@ -14,7 +14,11 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "cedriclombardot/admingenerator-generator-bundle": "2.3.*@dev",
+
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+
+        "cedriclombardot/admingenerator-generator-bundle": "~1.1",
         "propel/propel-bundle": "1.4.*",
         "willdurand/propel-eventdispatcher-behavior": ">=1.2",
         "willdurand/propel-eventdispatcher-bundle": ">=1.0",

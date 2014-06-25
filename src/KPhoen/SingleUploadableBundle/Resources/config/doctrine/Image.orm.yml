@@ -1,0 +1,15 @@
+KPhoen\SingleUploadableBundle\Entity\Image:
+    type:   entity
+    table:  images
+
+    fields:
+        id:
+            type:       integer
+            id:         true
+            generator:  { strategy: AUTO }
+
+        title:
+            type:       string
+            length:     255
+
+        file_name:      string

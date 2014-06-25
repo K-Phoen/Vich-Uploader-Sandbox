@@ -1,5 +1,6 @@
 admingenerator_generator:
-    use_propel:           true
+    use_propel:          true
+    use_doctrine_orm:    true
 
     overwrite_if_exists: %kernel.debug%
 

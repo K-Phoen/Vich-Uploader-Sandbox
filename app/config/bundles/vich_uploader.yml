@@ -18,3 +18,4 @@ vich_uploader:
         image_mapping:
             uri_prefix:         /images
             upload_destination: image_fs
+            db_driver:          orm

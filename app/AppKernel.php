@@ -14,6 +14,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
 
+            // doctrine
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+
             // propel
             new Propel\PropelBundle\PropelBundle(),
 
