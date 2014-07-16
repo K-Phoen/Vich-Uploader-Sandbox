@@ -13,8 +13,8 @@ class CarAdmin extends Admin
     {
         $formMapper
             ->add('name')
-            ->add('front_image', 'file')
-            ->add('back_image', 'file')
+            ->add('front_image', 'file', array('required' => false))
+            ->add('back_image', 'file', array('required' => false))
         ;
     }
 
