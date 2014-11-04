@@ -21,7 +21,7 @@ class BikeAdmin extends Admin
                 'allow_delete'  => true,
                 'by_reference'  => false,
                 'options'       => array(
-                    'required' => $this->getSubject()->getId() === null
+                    'required' => $this->getSubject()->getId() === null,
                 ),
             ))
         ;

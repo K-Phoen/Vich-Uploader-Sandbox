@@ -30,7 +30,7 @@ class BikeImage
     protected $file_name;
 
     /**
-     * @var File $back_image
+     * @var File $image
      */
     protected $image;
 

@@ -13,7 +13,10 @@ class ImageAdmin extends Admin
     {
         $formMapper
             ->add('title')
-            ->add('image', 'file', array('required' => false))
+            ->add('image', 'vich_file', array(
+                'required' => false,
+                'mapping'  => 'image_mapping',
+            ))
         ;
     }
 

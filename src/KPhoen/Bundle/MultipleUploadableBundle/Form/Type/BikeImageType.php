@@ -12,7 +12,11 @@ class BikeImageType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('image', 'file')
+            ->add('image', 'vich_file', array(
+                'required'      => true,
+                'mapping'       => 'bike_mapping',
+                'allow_delete'  => false,
+            ))
         ;
     }
 
