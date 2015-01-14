@@ -15,12 +15,10 @@ class CarAdmin extends Admin
             ->add('name')
             ->add('front_image', 'vich_file', array(
                 'required'      => true,
-                'mapping'       => 'car_front_mapping',
                 'allow_delete'  => false,
             ))
             ->add('back_image', 'vich_file', array(
                 'required'      => true,
-                'mapping'       => 'car_back_mapping',
                 'allow_delete'  => false,
             ))
         ;

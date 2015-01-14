@@ -15,7 +15,6 @@ class ImageAdmin extends Admin
             ->add('title')
             ->add('image', 'vich_file', array(
                 'required' => false,
-                'mapping'  => 'image_mapping',
             ))
         ;
     }
