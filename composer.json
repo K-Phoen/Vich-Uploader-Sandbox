@@ -18,12 +18,13 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "sonata-project/doctrine-orm-admin-bundle": "dev-master",
         "sonata-project/jquery-bundle": "1.10.*@dev",
-        "sonata-project/admin-bundle": "~2.3.0",
+        "sonata-project/admin-bundle": "~2.3@dev",
         "sonata-project/user-bundle": "@dev",
         "doctrine/doctrine-fixtures-bundle": "~2.2",
         "vich/uploader-bundle": "1.0.x-dev",
         "knplabs/gaufrette": "dev-master",
-        "knplabs/knp-gaufrette-bundle": "dev-master"
+        "knplabs/knp-gaufrette-bundle": "dev-master",
+        "ocramius/proxy-manager": "~0.5"
     },
     "scripts": {
         "post-install-cmd": [
