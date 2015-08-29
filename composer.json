@@ -23,8 +23,7 @@
         "doctrine/doctrine-fixtures-bundle": "~2.2",
         "vich/uploader-bundle": "1.0.x-dev",
         "knplabs/gaufrette": "dev-master",
-        "knplabs/knp-gaufrette-bundle": "dev-master",
-        "ocramius/proxy-manager": "~0.5"
+        "knplabs/knp-gaufrette-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
